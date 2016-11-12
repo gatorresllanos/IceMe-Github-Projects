@@ -84,6 +84,49 @@
     <h2>Dégustez une glace</h2>
 
    </div>
+   <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Commander</h4>
+      </div>
+
+      <div class="modal-body">
+
+       <div id="wufoo-zc2sxox0yx8xhz">
+          Fill out my <a href="https://gatorresllanos.wufoo.com/forms/zc2sxox0yx8xhz">online form</a>.
+          </div>
+          <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+          <script type="text/javascript">var zc2sxox0yx8xhz;(function(d, t) {
+          var s = d.createElement(t), options = {
+          'userName':'gatorresllanos',
+          'formHash':'zc2sxox0yx8xhz',
+          'autoResize':true,
+          'height':'488',
+          'async':true,
+          'host':'wufoo.com',
+          'header':'show',
+          'ssl':true};
+          s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+          s.onload = s.onreadystatechange = function() {
+          var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+          try { zc2sxox0yx8xhz = new WufooForm();zc2sxox0yx8xhz.initialize(options);zc2sxox0yx8xhz.display(); } catch (e) {}};
+          var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+          })(document, 'script');</script>
+
+      </div>
+      <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
 
 
     <div id="image">
@@ -120,7 +163,10 @@
       </div>
        <ul class="list-inline">
           <li>
+            <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
               <i class="fa fa-glass" aria-hidden="true"></i>
+              </button>
           </li>
           <li>
               <i class="fa fa-coffee" aria-hidden="true"></i>
